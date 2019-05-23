@@ -1,8 +1,6 @@
-package system;
-
 import java.util.logging.Logger;
 
-public class JThread extends Thread {
+public class JThread extends Thread implements Runnable {
     private Logger log = Logger.getLogger(this.getName());
     JThread(String name){
         super(name);
